@@ -19,9 +19,9 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "0.1.0",
+      "sem_ver" : "0.2.0",
       "build_uid" : "2c38af05-ea76-4707-9d69-76639660a328",
-      "MD5-CAM-1.0.1" : "57a2b294311a9a85e74b5717bf339ec3",
+      "MD5-CAM-1.0.1" : "30fb752074ddacc0b1fbdd91da387a50",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -361,7 +361,53 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "26D7CB755C36F413FAC76B4A0BE7F507"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Darstellung von Details zu einer Haus- oder Postadresse zur Verwendung in einer Gesundheitsakte.",
+          "keywords" : [ "Adresse", "Anschrift", "postalisch", "Mailing", "Heimat", "Geschäft", "physisch" ],
+          "use" : "Verwenden Sie diese Archetyp, um Details zu einer physischen oder postalischen Adresse darzustellen, die als Teil einer klinischen Aufzeichnung in einer Gesundheitsakte erforderlich ist. Beispiele beinhalten:\r\n- die Adresse einer teilnehmenden Organisation für häusliche Pflege bei einer Überweisung an einen anderen Gesundheitsdienstleister; oder\r\n- die Adresse einer Person oder Organisation, die eine physische Kopie einer Vorab-Pflegerichtlinie besitzt; oder\r\n- die Adresse eines Sturz- oder Unfallortes.\r\n\r\nDer Umfang dieses Archetyps wurde darauf beschränkt, nur die gebräuchlichsten Komponenten für eine einfache Adresse zu enthalten. Detailliertere Adresskomponenten sind im Archetyp CLUSTER.structured_address enthalten, der im SLOT \"Strukturierte Adressdaten\" innerhalb dieses Archetyps verschachtelt ist.\r\n\r\nIn den meisten Anwendungsfällen, in denen eine Adresse in eine Gesundheitsakte aufgenommen werden muss, reicht die Freitexteingabe in einem oder mehreren Elementen der \"Adresse unstrukturiert\" aus, um eine einfache Adresse zu erfassen. In Situationen, in denen detailliertere Details zu einer oder mehreren Adresskomponenten erforderlich sind, verwenden Sie die zusätzlichen strukturierten Datenelemente im Archetyp CLUSTER.structured_address. Wenn der Archetyp CLUSTER.structured_address innerhalb des SLOTs \"Strukturierte Adressdaten\" verschachtelt ist, können einige oder alle der strukturierten Adresselemente verkettet und im Element \"Adresse unstrukturiert\" dargestellt werden.\r\n\r\nDieser Archetyp könnte auch als Ersatz für formelle demografische Daten verwendet werden, wenn ein Template mit Domänenexperten überprüft wird – beispielsweise bei einer Bewertung, bei der Prüfer eine Adresse in einem Bewertungsformular erwarten würden. Dieser CLUSTER.address könnte auch als Stellvertreter für eine Adresse in formalen demografischen Adressdaten verwendet werden, wenn ein Template mit Klinikern überprüft wird – zum Beispiel bei einer Bewertung, bei der Prüfer erwarten würden, dass die vollständigen Kontaktdaten der Person oben auf dem Bewertungsformular angezeigt werden.",
+          "misuse" : "Darf nicht verwendet werden, um eine Adresse im Rahmen der Führung eines offiziellen demografischen Registers oder Index zu erfassen. Verwenden Sie zu diesem Zweck einen formalen Master Patient Index oder Health Provider Index oder Archetypen, die auf dem openEHR Demographic Information Mode basieren.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere detaljer om en fysisk adresse eller postadresse i en pasientjournal.",
+          "keywords" : [ "adresse, postadresse, hjem, arbeid, fysisk, oppmøtested" ],
+          "use" : "Brukes for å registrere detaljer om en fysisk adresse eller postadresse i en pasientjournal.\r\n\r\nFor eksempel:\r\n- Adressen til hjemmetjeneste eller en annen helsetjenesteyter.\r\n- Adressen til en person eller organisasjon som oppbevarer fremtidige behandlingsvalg.\r\n- Adressen til hendelsestedet til en ulykke eller et fall.\r\n\r\nMålet for denne arketypen er å dekke de vanligste komponentene for en enkel adresse. Mer detaljerte adressekomponenter finnes i arketypen CLUSTER.structured_address, som er laget for bruk i SLOTet \"Strukturert adresse\" i denne arketypen.\r\n\r\nI de mest vanlige brukscasene der navn skal registreres i pasientjournalen, vil fritekstregistrering i ett eller flere \"Ustrukturert adresse\" elementer være tilstrekkelig. I tilfeller der man har behov for detaljer om en eller flere adressekomponenter, bruk arketypen CLUSTER.structured_address i SLOTet \"Strukturert adresse\". I tilfeller der arketypen CLUSTER.structured_address er lagt i SLOTet \"Strukturert adresse\", kan noen eller alle de strukturerte navnelementene slås sammen og vises i dataelementet \"Adresse\".\r\n\r\nDenne arketypen kan også brukes som en midlertidig erstatning for formelle demografiske data når man gjennomgår et templat med domeneeksperter - for eksempel en vurdering der man i templatet forventer å se detaljer om en adresse i eller på toppen av et vurderingsskjema.",
+          "misuse" : "Brukes ikke til å representere eller erstatte de formelle demografiske opplysninger for formell identitetsforvaltning eller for å opprettholde et demografisk register eller en indeks. Bruk formelle pasientregister, helsepersonellregister eller arketyper basert på openEHR demografisk informasjonsmodell til dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record details about a physical or postal address for use within a health record.",
+          "keywords" : [ "address", "postal", "mailing", "home", "business", "physical" ],
+          "use" : "Use to record details about a physical or postal address required as part of clinical recording within a health record. Examples include:\r\n- the address of an attending home care organisation in a referral to another healthcare provider; or\r\n- the address of a person or organisation that holds a physical copy of an advance care directive; or\r\n- the address of a location of a fall or accident.\r\n\r\nThe scope of this archetype has been constrained to carry only the most common components for a simple address. More detailed address components are included in the CLUSTER.structured_address archetype, designed to nest in the 'Structured address' SLOT within this archetype. \r\n\r\nIn most common use cases where an address needs to be included within a health record, free text entry within one or more 'Unstructured address' elements will be sufficient to record a simple address. In situations when finer-grained detail about one or more address components is required, use the additional structured data elements in the CLUSTER.structured address archetype. If the CLUSTER.structured_address archetype is nested within the 'Structured address' SLOT, any or all of the structured name elements can be concatenated and represented in the 'Unstructured address' element.\r\n\r\nThis archetype could also be used as a proxy for formal demographic data when reviewing a template with domain experts - for example, an assessment where reviewers would expect to see an address within an assessment form. This CLUSTER.address could also be used as a proxy for an address in formal demographic address data when reviewing a template with clinicians - for example, an assessment where reviewers would expect to see the individual's full contact details at the top of the assessment form.",
+          "misuse" : "Not to be used to record an address as part of maintaining an official demographic register or index. Use a formal Master Patient Index or Health Provider Index for this purpose, or archetypes based on the openEHR Demographic Information Model.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-CLUSTER.address.v0",
     "differential" : true,
@@ -373,7 +419,25 @@
       "@type" : "C_COMPLEX_OBJECT",
       "rmTypeName" : "CLUSTER",
       "nodeId" : "at0000.1",
-      "attributes" : [ ],
+      "attributes" : [ {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "items",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0016.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        }, {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ELEMENT",
+          "occurrences" : "0..0",
+          "nodeId" : "at0017.1",
+          "attributes" : [ ],
+          "attributeTuples" : [ ]
+        } ]
+      } ],
       "attributeTuples" : [ ]
     },
     "terminology" : {
