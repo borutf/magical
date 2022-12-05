@@ -21,7 +21,7 @@
       "custodian_namespace" : "",
       "sem_ver" : "0.5.0",
       "build_uid" : "434aa4ee-a88e-479d-b466-851a258c0818",
-      "MD5-CAM-1.0.1" : "67a11a00fb486ff70e6a552f0e05bc1d",
+      "MD5-CAM-1.0.1" : "a39c7b9dfd17919754c0d3dc5f7e65d5",
       "PARENT:MD5-CAM-1.0.1" : "8F3156560D39B12C8362DF26A4C575BD"
     },
     "details" : {
@@ -469,7 +469,17 @@
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "DV_DATE",
-                          "attributes" : [ ],
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_DATE",
+                              "rmTypeName" : "DATE",
+                              "occurrences" : "1..1",
+                              "patternedConstraint" : "yyyy-mm-??",
+                              "constraint" : [ ]
+                            } ]
+                          } ],
                           "attributeTuples" : [ ]
                         } ]
                       } ],
@@ -491,7 +501,14 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { }
+        "en" : {
+          "at0007.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0007.1",
+            "text" : "DV_DATE",
+            "description" : ""
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
